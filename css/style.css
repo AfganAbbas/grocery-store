@@ -33,6 +33,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px){
   .hero__part{
@@ -62,6 +63,35 @@ body{
   margin-bottom: 2rem;
   text-transform:none;
   font-style: italic;
+}
+
+.hero__part .welcome{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3em 0;
+  width: 500px;
+  height: 500px;
+}
+
+.hero__part .welcome img{
+  height: 30rem;
+  width: 30rem;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 2rem;
+  position: absolute;
+  border: 2px solid gray;
+  padding: 6px;
+}
+.hero__part .welcome img:first-child{
+  right: -10px;
+  bottom: 0;
+}
+.hero__part .welcome img:last-child{
+  right: 40px;
+  top: 0;
 }
 
 .container{
